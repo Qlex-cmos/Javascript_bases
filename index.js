@@ -74,21 +74,49 @@ let y = "5";
 
 // === Teste l'égalité en type et en contenu
 // == Teste l'égalité de valeur sans prendre en compte le type
-if (x == y) {
-  console.log("Ils sont égaux");
-} else {
-  alert("Ils sont différents");
-}
+// if (x == y) {
+//   console.log("Ils sont égaux");
+// } else {
+//   alert("Ils sont différents");
+// }
 
 // || ou
 // && et
 
-if (x < y || x > 6) {
-  console.log("oui");
-}
+// if (x < y || x > 6) {
+//   console.log("oui");
+// }
 
-if (x < y && x > 6) {
-  console.log("oui");
-}
+// if (x < y && x > 6) {
+//   console.log("oui");
+// }
 
 //*** Les FONCTIONS***//
+
+// Fonction classique à l'ancienne
+// function doSomething() {
+//   console.log("I'm processing something");
+//   console.log(5 + 6);
+//   alert("Calcul terminé!");
+// }
+
+// Appel de la fonction indispensable
+// doSomething();
+
+// Fonction fléchée
+// const addition = (a, b) => {
+//   console.log(a + b);
+// };
+
+// addition(2, 3);
+
+//*** La portée des variables ***//
+
+function add2() {
+  let a = 2;
+  // return permet de retrouner les choses ou mettre fin à une fonction
+  // return a + 2;
+  console.log(a + 2);
+}
+
+add2();
